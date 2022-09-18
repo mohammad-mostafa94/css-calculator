@@ -1,38 +1,54 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.App{
+  display:flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.calculator{
+  background-color: aqua;
+  width:400px;
+  max-width: 450px;
+}
+.calculator:hover{
+  box-shadow: 5px 5px 5px 5px green;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.title{
+  text-align:center;
+}
+
+input{
+  text-align: right;
+  height:70px;
+  width:390px;
+  font-size: 30px;
+  letter-spacing: 3px;
+}
+
+.mainDiv{
+  display: grid;
+  grid-template-columns: auto auto auto auto ;
+  gap: 2px;
+  place-items: center;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #2196F3; */
+  /* padding: 10px; */
+}
+
+.mainDiv div{
+  height: 100px;
+  width: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin:3px;
+  background-color:azure;
+}
+.mainDiv div:hover{
+  background-color: red;
 }
